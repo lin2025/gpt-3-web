@@ -2,59 +2,63 @@
 
 ![](https://lin2025.github.io/img/other-gpt-3.png)
 
-
 ## 简介
- GPT-3 网页版，仅一个html文件，打开即用。
- 静态网页 无依赖 无需部署 **仅一个html文件** 打开即用 超级简单
+
+ GPT-3 静态网页 **仅一个html文件** 打开即用 超级简单
  
- 本代码基于GPT3.5(v4.28)代码修改，改成GPT-3(v5.1)  
+ 基于[GPT3.5](https://github.com/lin2025/gpt3.5/)(v4.28)代码修改
+
+ > 改英文的原因 https://github.com/lin2025/gpt3.5/issues/1
+
+ > GPT-3消耗快，建议还是用GPT3.5
+
+ **在线体验** https://lin2025.gitee.io/gpt-3-web/  或  https://lin2025.github.io/gpt-3-web/
  
- >GPT-3.5/ChatGPT版本请移步：https://gitee.com/lin2025/gpt3.5/  或  https://github.com/lin2025/gpt3.5/GPT-3
+ 默认模型：<kbd>text-davinci-003</kbd>
  
- **在线体验** [https://github.com/lin2025/gpt-3-web/](https://github.com/lin2025/gpt-3-web/) 
+ 默认<kbd>max_tokens</kbd>: 500    
  
- 默认模型：text-davinci-003
- 
- 默认max_tokens: 500    
- 
- 可用GPT-3模型有: text-davinci-002 / text-curie-001 / text-babbage-001 / text-ada-001  / davinci / curie / babbage / ada ...
- 
+ 支持的GPT-3模型: <kbd>text-davinci-002</kbd>  <kbd>text-curie-001</kbd>  <kbd>text-babbage-001</kbd>  <kbd>text-ada-001</kbd>   <kbd>davinci</kbd>  <kbd>curie</kbd>  <kbd>babbage</kbd>  <kbd>ada</kbd> ...
+
+ 换模型方法：代码中搜索"axios.post"，修改'model'和'max_tokens'。验证 + 发送 ，共有两处需要修改。
+
+## 功能 & 特点
+
+ 请移步 **GPT3.5**（**ChatGPT**）版：https://gitee.com/lin2025/gpt3.5/  或  https://github.com/lin2025/gpt3.5/
 
 
 ## :globe_with_meridians:
-A GPT-3 web page, it's a single HTML file. 
 
-GPT-3 (v5.1) 
+ A GPT-3 web page, it's a single HTML file. 
 
-Modified based on **GPT-3.5** v4.28(v20230428) [https://github.com/lin2025/gpt3.5/](https://github.com/lin2025/gpt3.5/)  
+ GPT-3 (v5.1) 
 
-**Demo** [https://github.com/lin2025/gpt-3-web/](https://github.com/lin2025/gpt-3-web/) 
+ Modified based on **GPT-3.5** v4.28(20230428) [https://github.com/lin2025/gpt3.5/](https://github.com/lin2025/gpt3.5/)  
 
-Default model: text-davinci-003   
+ **Demo** [https://lin2025.github.io/gpt-3-web/](https://lin2025.github.io/gpt-3-web/) 
 
-Default max_tokens: 500    
+ Default model: <kbd>text-davinci-003</kbd>   
 
-GPT-3 models: text-davinci-002 / text-curie-001 / text-babbage-001 / text-ada-001  / davinci / curie / babbage / ada ...
+ Default <kbd>max_tokens</kbd>: 500    
 
-You can replace the model in the code with other GPT-3 models,  Search for "axios.post" in the code, and then modify the 'model' and 'max_tokens' in the parameter
+ GPT-3 models: <kbd>text-davinci-002</kbd>  <kbd>text-curie-001</kbd>  <kbd>text-babbage-001</kbd>  <kbd>text-ada-001</kbd>   <kbd>davinci</kbd>  <kbd>curie</kbd>  <kbd>babbage</kbd>  <kbd>ada</kbd> ...
 
-About GPT-3 models: 
+ You can replace the model in the code with other GPT-3 models,  Search for "axios.post" in the code, and then modify the 'model' and 'max_tokens' in the parameter.
 
-https://platform.openai.com/docs/models/model-endpoint-compatibility    
+### About GPT-3 models
 
-https://platform.openai.com/docs/models/gpt-3
+https://platform.openai.com/docs/models/gpt-3  
+
+https://platform.openai.com/docs/models/model-endpoint-compatibility
 
 
-## OpenAI API price
+### OpenAI API price
 
-## OpenAI API price
+ **GPT-3 models** vs **GPT-3.5 models**
 
-GPT-3 models 
-
-- GPT-3 Davinci	$0.0200 / 1K tokens ****
-- GPT-3 Curie		$0.0020 / 1K tokens ***
-- GPT-3 Babbage	$0.0005 / 1K tokens	**
-- GPT-3 Ada		  $0.0004 / 1K tokens	*
-
-VS GPT-3.5 models
-- GPT-3.5			$0.0020 / 1K tokens	*****
+- $0.0200 / 1K tokens  **** GPT-3 Davinci
+- $0.0020 / 1K tokens   *** GPT-3 Curie
+- $0.0005 / 1K tokens    ** GPT-3 Babbage    
+- $0.0004 / 1K tokens     * GPT-3 Ada        
+vs
+- $0.0020 / 1K tokens ***** GPT-3.5          
